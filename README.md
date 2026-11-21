@@ -1,6 +1,6 @@
 # Spring6 MVC REST backend web application for UPPERCASE band
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/markdeleon01/spring6-webmvc-mysql-uppercaseband-webapp/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/markdeleon01/spring6-webmvc-mysql-uppercaseband-webapp/tree/main)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/markdeleon01/spring6-webmvc-mysql-uppercaseband-webapp/tree/main.svg?style=svg&circle-token=CCIPRJ_RRCxkUe13kYyNhHyVHjGSP_21a17c2d817dac28a39c62383b3e099e981249d9)](https://dl.circleci.com/status-badge/redirect/gh/markdeleon01/spring6-webmvc-mysql-uppercaseband-webapp/tree/main)
 
 [![codecov](https://codecov.io/gh/markdeleon01/spring6-webmvc-mysql-uppercaseband-webapp/graph/badge.svg?token=WH38IFOEXS)](https://codecov.io/gh/markdeleon01/spring6-webmvc-mysql-uppercaseband-webapp)
 
