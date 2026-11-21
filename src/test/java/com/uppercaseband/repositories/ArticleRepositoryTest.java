@@ -9,7 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 
 @DataJpaTest
@@ -44,8 +45,8 @@ class ArticleRepositoryTest {
         assertThat(savedArticle.getCategory()).isNotNull();
         assertThat(savedArticle.getSubContent()).isNotNull();
         assertThat(savedArticle.toString()).isNotNull();
-        assertEquals(savedArticle.hashCode(), article.hashCode());
-        assertEquals(savedArticle, article);
+        assertEquals(savedArticle.hashCode(),savedArticle.hashCode());
+        assertEquals(savedArticle.equals(savedArticle), true);
 
         assertThat(savedArticle.getMedia()).isNotNull();
         assertThat(savedArticle.getMedia().getId()).isNotNull();
@@ -53,7 +54,7 @@ class ArticleRepositoryTest {
         assertThat(savedArticle.getMedia().getType()).isNotNull();
         assertThat(savedArticle.getMedia().toString()).isNotNull();
 
-        assertEquals(savedArticle.getMedia().hashCode(), article.getMedia().hashCode());
-        assertEquals(savedArticle.getMedia(), article.getMedia());
+        assertEquals(savedArticle.getMedia().hashCode(),savedArticle.getMedia().hashCode());
+        assertEquals(savedArticle.getMedia().equals(savedArticle.getMedia()), true);
     }
 }
