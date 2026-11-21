@@ -25,7 +25,7 @@ public class BootstrapTest {
 
     @Test
     void testRun() throws Exception {
-        bootstrapData.run((String) null);
+        bootstrapData.run(null);
 
         assertThat(articleRepository.count()).isEqualTo(3);
     }
